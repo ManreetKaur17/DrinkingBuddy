@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Movie  Night Watch Parties Club Page</title>
+    <title>Browse for Clubs</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -123,7 +123,7 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  margin: 6px;
+  margin: 0px;
 }
 
 
@@ -214,10 +214,6 @@ p {
     text-align: center;
 }
 
-.center{
-    text-align: center;
-} 
-
         </style>
 </head>
 <body>
@@ -251,49 +247,74 @@ p {
       </header>
 
 
-    <div class="con"></div>
-    <h2 class="text-center my-3">Movie Night Watch Parties</h2>
+    <h2 class="text-center my-3" id='welcome'>Welcome, </h2>
 
     <br>
 
     <div class="container mt-3">
 
-        <div class="container">
-            <div class="card" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-sm-5" style="background: #868e96;">
-                        <img src="img/netflix.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="card-body">
-                            <h3 class="card-title">Let's watch a movie together! </h3>
-                            <p class="card-text">Join us every Saturday night on Zoom where we'll watch a movie that the group has voted for. 
-                                We'll chit chat for a bit then  start the movie at 6:45 PM  sharp. </p>
+        Some recommendations for you based on your interests: 
+        <div class="break"></div>
 
-                                <p class="card-text">We love all genres! If you have any movie suggestions, feel free to bring them up in the group. Happy watching :) </p>
-<div class="break"></div>
-                            
-                            <p class="card-text"><b>Organizer: </b>Justin Brown</p>
-                            <p class="card-text"><b>Date: </b>Every Saturday evening</p>
-                            <p class="card-text"><b>Time: </b>6:30pm - 8:30 pm</p> <p></p> 
-                            <p class="card-text"><b>Location: </b>On Zoom</p> <p></p> 
-
-                            <div  class="break"></div><div class="center">
-                            <a href="https://zoom.us/j/99621685116?pwd=RTVtNzF0M0o3WkVaT3JHczNuRERVdz09" target="_blank"><b>Zoom Meeting Link</b></a></div>
-                        </div>
-                    </div>
+        <!--Row with two equal columns-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/foodie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Foodies United</h5>
+                  <p class="card-text">Share your favorite recipes and try out new local eateries with fellow foodies.</p>
                 </div>
+              </div>
             </div>
-<div class="center">
-            <br>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/among-us.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Among Us Game Nights</h5>
+                  <p class="card-text">Join us for a fun filled night of Among Us games!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/yoga.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Online Yoga Buddies</h5>
+                  <p class="card-text">Tune in for our free weekly yoga sessions. We welcome all fitness levels.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <a href = "index.html">
-            <button type="button" class="btn btn-info btn-lg btn-block">Return to the browsing page</button>
-            </a>
+          <div class="row justify-content-center"><div class="col-md-10">
+              <div class="break"></div>
+              <div class="break"></div>
+Or, search for clubs by keyword or category: <div  class="break"></div>
+            <form class="d-flex ml-auto">
+                <input class="form-control me-2" type="search" placeholder="Find your next group" aria-label="Search">
+                <button class="btn btn-info" type="submit">Search</button>
+              </form> <div class="break"></div>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Health & Wellness</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Travel</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Online</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Food & Drink</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Music</button>
+                <button type="button" class="btn btn-outline-secondary  btn-sm">Tech</button>
 
-        </div></div>
+
+              
+          </div></div>
 
     </div>
+
+<script>
+    $(document).ready(function() {
+        var name1 = localStorage.getItem('username');
+       console.log(name1);
+       document.getElementById('welcome').append(name1);
+    });
+</script>
 </body>
 
 </html>
