@@ -6,8 +6,9 @@ An application where it's main goal is to connect people with the same interest 
 -------
 ## Feature List
 ### Core Application Features
-1. User can select a video conference room based on their interest and connect with other individuals.
+1. User can join a video conference room based on their interest and connect with other individuals.
 2. User is able to fill out a form and would return suggested rooms.
+3. User can host a room based on their interest and let individuals join their room
 
 
 ### Nice-To-Have Features
